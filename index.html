@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Mobile Specific Metas
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- FONT
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<!-- <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,700" rel="stylesheet"> -->
+<!-- <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700,800,900" rel="stylesheet"> -->
+<link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800,900" rel="stylesheet">
+
+
+<!-- CSS
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<link rel="stylesheet" href="css/skeleton.css">
+
+<!-- Favicon
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<link rel="icon" type="image/png" href="images/favicon.png" />
+
+<title>Source - Ethical clothing and lifestyle products</title>
+</head>
+<body>
+<header class="cd-auto-hide-header">
+	<div class="logo"><a href="index.html">Sourced</a></div>
+	<nav class="cd-primary-nav">
+		<a href="#cd-navigation" class="nav-trigger">
+			<span>
+				<em aria-hidden="true"></em>
+				Menu
+			</span>
+		</a> <!-- .nav-trigger -->
+		<ul id="cd-navigation">
+			<!-- <li><a class="current" href="#">Home</a></li> -->
+			<li><a href="#">About</a></li>
+			<li><a href="suggest-supplier.html">Suggest supplier</a></li>
+		</ul>
+	</nav>
+</header>
+
+<div class="header">
+    <div class="container section">
+		<div class="row">
+			<div class="eight columns">
+				<h1>Choosing a product that's sustainable from a supplier that's ethical is now more important than ever</h1>
+			</div>
+		</div>
+		<div class="row">
+		    <div class="eight columns">
+		    	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>
+		    </div>
+	    </div>
+	</div>
+</div>
+
+
+<div class="white">
+	<div class="container section">
+		<div class="row">
+			<div class="twelve columns">
+					<h2>List of all suppliers</h2>
+			</div>
+			<div class="">
+				<!-- Control buttons -->
+				<div id="myBtnContainer">
+					<button class="button button-alt-1 active" onclick="filterSelection('all')"> Show all</button>
+					<button class="button button-alt-1" onclick="filterSelection('Health and beauty')"> Health and beauty</button>
+					<button class="button button-alt-1" onclick="filterSelection('clothing')"> Clothing</button>
+					<button class="button button-alt-1" onclick="filterSelection('Household')"> Household</button>
+				</div>						
+				<!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+				<!-- <div class="filterDiv clothing">clothing</div> -->
+			</div>
+		</div>
+
+		<!-- <div class="row card">
+			<div class="three columns">
+				<img src="">
+			</div>
+			<div class="nine columns">
+				<h3><span>Section</span> Company name</h3>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+				<p><a href="" class="button"> visit site</a></p>
+
+				<div class="results"></div>
+			</div>
+		</div> -->
+
+		<div class="allResults"></div>
+
+
+		<!-- <div class="row card">
+			<div class="three columns">
+				<img src="">
+			</div>
+			<div class="nine columns">
+				<div class="results">
+				</div>
+			</div>
+		</div> -->
+
+
+	</div>
+</div>
+
+
+
+
+<div class="callout">
+    <div class="container section">
+	  <div class="row">
+	    <div class="eight columns">
+	    	<h3>Share an ethical source with others </h3>
+	    </div>
+	    <div class="one column">
+			<a href="suggest-supplier.html" class="button button-alt-2" type="button">recommend source</a>
+	    </div>
+	  </div>
+	</div>
+</div>
+
+
+
+<script id="some-template" type="text/x-handlebars-template"> 
+	{{#users}} 
+  <div class="card">
+	<div class="container" id="101">
+	  <h4><b>AcquiringDivision</b></h4>
+	  <p>{{AcquiringDivision}}</p>
+   <h4><b>End Date</b></h4>
+	  <p>{{EndDate}}</p>
+	   <h4><b>Excel</b></h4>
+	  <p>{{Excl}}</p>
+	</div>
+  </div>
+	 {{/users}} 
+  </script>
+
+
+
+<footer>
+    <div class="container section">
+	  <div class="row">
+	    <div class="twelve columns">
+				<div class="logo-footer"><a href="index.html">Sourced</a></div>
+	    </div>
+	  </div>
+      <p class="copyright">&copy; Better Design. Made in London. </p>
+	</div>
+</footer>
+
+<script src="http://www.fsfoo.com/js/vendor/handlebars-1.0.rc.2.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script> <!-- Resource jQuery -->
+<script>
+	if( !window.jQuery ) document.write('<script src="js/jquery-3.0.0.min.js"><\/script>');
+</script>
+<script src="js/main.js"></script> <!-- Menu if you insist -->
+<script src="js/source.js"></script> <!-- Yeah it's just cawlin a google sheet 😎 -->
+</body>
+</html>
