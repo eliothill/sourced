@@ -34,7 +34,7 @@ var newdate = day + "/" + month + "/" +year;
       }
       if (!created) {
         sources.push(this.title.$t);
-        $('.allResults').append('<div class="row card"><div class="nine columns">'+'<h3>'+'<span>'+ this.gsx$sector.$t + '</span>' + this.title.$t + '</h3>' + '<p>'+ this.gsx$description.$t + '</p>' + '<p><a class="button" href="' + this.gsx$link.$t + '">Visit site</a></p></div></div>' );
+        $('.allResults').append('<div class="row card filterDiv  ' + this.gsx$sector.$t + '"><div class="nine columns">'+'<h3>'+'<span>'+ this.gsx$sector.$t + '</span>' + this.title.$t + '</h3>' + '<p>'+ this.gsx$description.$t + '</p>' + '<p><a class="button" href="' + this.gsx$link.$t + '">Visit site</a></p></div></div>' );
       }
     });
   });

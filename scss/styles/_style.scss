@@ -766,3 +766,13 @@ footer ul li, footer ul li a {
   margin: 10px 0px;
   text-align: left;
 }
+
+.filterDiv {
+  float: left;
+  display: none; /* Hidden by default */
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
