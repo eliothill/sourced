@@ -92,6 +92,10 @@ h3, h4 {
   font-weight: 700;
 }
 
+p {
+  color: $flat-wet-asphalt;
+}
+
 /* Button alt 1 */
 input[type="submit"], input[type="reset"], input[type="button"] {
   display: inline-block;
@@ -140,7 +144,9 @@ input[type="submit"].button-alt-1:hover, input[type="reset"].button-alt-1:hover,
   border-color: $flat-emerald; }
 
 .button.button-alt-1:focus,
-button.button-alt-1:focus {
+button.button-alt-1:focus,
+.button.button-alt-1:active,
+button.button-alt-1:active {
   color: $flat-wet-asphalt;
   background-color: $flat-emerald;
   border-color: $flat-emerald; }
@@ -175,7 +181,7 @@ input[type="submit"].button-alt-2:hover, input[type="reset"].button-alt-2:hover,
 .button.button-alt-2:focus,
 button.button-alt-2:focus {
   color: $white;
-  background-color: $flat-orange;
+  background-color: $flat-green-sea;
   border-color: rgba($white, 1); 
 }
   
