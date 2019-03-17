@@ -90,3 +90,8 @@ jQuery(document).ready(function($){
 });
 
 
+$(function(){
+	$('#addSupplier').click(function() {
+	    $(this).toggleClass('sendingSupplier');
+	});
+});
